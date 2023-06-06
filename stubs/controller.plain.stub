@@ -1,0 +1,14 @@
+<?php
+
+namespace {{ namespace }};
+
+use {{ rootNamespace }}Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
+class {{ class }} extends Controller
+{
+    function check()
+    {
+        echo"Already Exist with the help of stub";
+    }
+}
