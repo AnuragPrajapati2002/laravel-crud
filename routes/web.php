@@ -51,9 +51,12 @@ Route::get('/service',[UserController::class,'display']);
 Route::get('/relation',[UserController::class,'relation']);
 
 Route::get('/binding/{key:id}',[NewController::class,'binding']);
+
 Route::get('/test',[UserController::class,'test']);
 
 Route::get('/mail',function() {
     return new Samplemail();
 });
+
+Route::view('/array','arrayfunction');
  
