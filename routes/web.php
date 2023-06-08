@@ -18,10 +18,6 @@ use App\Mail\Samplemail;
 |
 */
 
-// $info= "hi, I am boy";
-
-// $info=Str::of($info)->ucfirst($info)->replace("Hi","Hello",$info);
-// echo $info;
 
 Route::get('/', function () {
     return view('welcome');
@@ -59,4 +55,12 @@ Route::get('/mail',function() {
 });
 
 Route::view('/array','arrayfunction');
- 
+
+
+
+
+
+
+
+
+

@@ -10,11 +10,12 @@ class user extends Model
 {
     use HasFactory;
     public $timestamps=false;
-    
-    function getSurnameAttribute($value)
+   
+    function setNameAttribute($value)
     {
-        return $value.', Mypcot';
+        return $this->attributes['name']= 'Mr. '.$value;
     }
+
     function getNameAttribute($value)
     {
         return ucfirst($value);
